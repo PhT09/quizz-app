@@ -135,11 +135,11 @@ function App() {
     <div className="app">
       {/* ====== HEADER ====== */}
       <header className="app-header">
-        <h1 className="app-title">🧠 Quiz App</h1>
+        <h1 className="app-title">Quiz App</h1>
         <p className="app-subtitle">Kiểm tra kiến thức của bạn!</p>
         {cumulativeScore > 0 && (
           <div className="header-score">
-            🏅 Tổng điểm tích lũy: <strong>{cumulativeScore}</strong>
+            Tổng điểm tích lũy: <strong>{cumulativeScore}</strong>
           </div>
         )}
       </header>
@@ -165,7 +165,7 @@ function App() {
             <ResultView results={results} cumulativeScore={cumulativeScore} />
             <div className="action-bar">
               <button onClick={handlePlayAgain} className="btn btn-primary">
-                🔄 Chơi lại
+                Chơi lại
               </button>
             </div>
           </div>
@@ -191,7 +191,7 @@ function App() {
             {/* MAIN CONTENT AREA */}
             <div className="quiz-content-area">
 
-              {/* Thanh hiển thị tiến độ (đã sửa đổi giao diện một chút) */}
+              {/* Thanh hiển thị tiến độ */}
               <div className="progress-bar-container">
                 <div className="progress-info">
                   <span>Đã trả lời: {answeredCount}/{totalCount}</span>
@@ -245,7 +245,7 @@ function App() {
                     className="btn btn-submit"
                     disabled={answeredCount === 0}
                   >
-                    📝 Nộp bài ({answeredCount}/{totalCount})
+                    Nộp bài ({answeredCount}/{totalCount})
                   </button>
                 </div>
               </div>
@@ -254,10 +254,6 @@ function App() {
           </div>
         )}
       </main>
-
-      <footer className="app-footer">
-        <p>Quiz App © 2026 — Được xây dựng với FastAPI + React</p>
-      </footer>
     </div>
   );
 }

@@ -70,7 +70,7 @@ body {
 /* ====== HEADER ====== */
 .app-header {
   text-align: center;
-  padding: 20px 20px 30px;
+  padding: 5px 20px 5px;
 }
 
 .app-title {
@@ -90,8 +90,8 @@ body {
 
 .header-score {
   display: inline-block;
-  margin-top: 16px;
-  padding: 8px 20px;
+  /* margin-top: 1px; */
+  padding: 2px 10px;
   background: linear-gradient(135deg, rgba(108, 92, 231, 0.15), rgba(162, 155, 254, 0.1));
   border: 1px solid rgba(108, 92, 231, 0.3);
   border-radius: 50px;
